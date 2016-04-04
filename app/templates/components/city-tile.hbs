@@ -3,9 +3,11 @@
 
 <hr>
 
+<h4>Location: {{fullLocation}}</h4>
+
 <p>Rentals available in {{city.name}}:</p>
 <ul>
-  {{#each city.rentals as |rental|}}
+   {{#each sortedRentals as |rental|}}
     <li>{{rental.owner}}'s {{rental.type}} with {{rental.bedrooms}} rooms
     </li>
   {{/each}}
